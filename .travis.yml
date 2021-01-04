@@ -1,27 +1,25 @@
 language: php
 
 php:
-  - 5.6
-  - 7.0
-  - 7.1
-  - 7.2
   - 7.3
   - 7.4
   - 8.0
 
 env:
-  - COMPOSER_OPTIONS='install --prefer-source'
+  matrix:
+    - PREFER_LOWEST="--prefer-lowest"
+    - PREFER_LOWEST=""
 
 before_install:
   - composer self-update
 
 before_script:
-  - COMPOSER_ROOT_VERSION=dev-master composer $COMPOSER_OPTIONS
+  - COMPOSER_ROOT_VERSION=dev-master composer update --prefer-source $PREFER_LOWEST
 
 script:
   - ./bin/phpspec run --format=dot
   - ./bin/behat
 
-matrix:
-  allow_failures:
-    - php: 7.1
+#matrix:
+#  allow_failures:
+#    - php: 7.1

@@ -2,6 +2,7 @@
 
 use Behat\Behat\Context\SnippetAcceptingContext;
 use Behat\Gherkin\Node\PyStringNode;
+use Console\ApplicationTester;
 use Symfony\Component\Filesystem\Filesystem;
 use PhpSpec\Console\Application;
 
