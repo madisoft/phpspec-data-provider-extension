@@ -19,7 +19,3 @@ before_script:
 script:
   - ./bin/phpspec run --format=dot
   - ./bin/behat
-
-#matrix:
-#  allow_failures:
-#    - php: 7.1
