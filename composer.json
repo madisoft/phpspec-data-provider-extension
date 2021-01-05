@@ -1,5 +1,6 @@
 {
     "name": "moave/phpspec-data-provider-extension",
+    "description": "This extension allows you to create data providers for examples in specs.",
     "type": "library",
     "keywords": ["phpspec", "dataprovider", "extension", "coduo", "data", "provider"],
     "license": "MIT", 
