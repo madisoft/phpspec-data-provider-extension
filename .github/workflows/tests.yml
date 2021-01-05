@@ -13,7 +13,7 @@ jobs:
         php-versions: ['7.3', '7.4', '8.0']
         composer-stability: [ 'prefer-lowest', 'prefer-stable' ]
 
-    name: PHP ${{ matrix.php }} - ${{ matrix.stability }}
+    name: PHP ${{ matrix.php-versions }} - ${{ matrix.composer-stability }}
 
     steps:
       - name: Checkout
@@ -29,7 +29,7 @@ jobs:
         run: composer validate
 
       - name: Install dependencies
-        run: composer update --prefer-source --no-interaction --${{ matrix.stability }}
+        run: composer update --prefer-source --no-interaction --${{ matrix.composer-stability }}
 
       - name: Run phpspec tests
         run: ./bin/phpspec run --format=dot

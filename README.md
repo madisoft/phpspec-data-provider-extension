@@ -1,4 +1,4 @@
-#PhpSpec data provider extension
+# PhpSpec data provider extension
 
 [![Build Status](https://travis-ci.org/coduo/phpspec-data-provider-extension.svg?branch=master)](https://travis-ci.org/coduo/phpspec-data-provider-extension)
 
