@@ -59,9 +59,7 @@ class ApplicationTester
 
         $inputStream = $this->getInputStream();
         rewind($inputStream);
-        $this->application->getHelperSet()
-            ->get('question')
-            ->setInputStream($inputStream);
+        $this->input->setStream($inputStream);
 
         $this->result = $this->application->run($this->input, $this->output);
     }
