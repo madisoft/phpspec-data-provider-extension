@@ -1,6 +1,7 @@
-#PhpSpec data provider extension
+# PhpSpec data provider extension
 
 [![Build Status](https://travis-ci.org/coduo/phpspec-data-provider-extension.svg?branch=master)](https://travis-ci.org/coduo/phpspec-data-provider-extension)
+[![GitHub Actions](https://github.com/madisoft/phpspec-data-provider-extension/workflows/Build/badge.svg)](https://github.com/madisoft/phpspec-data-provider-extension/actions)
 
 This extension allows you to create data providers for examples in specs.
 
